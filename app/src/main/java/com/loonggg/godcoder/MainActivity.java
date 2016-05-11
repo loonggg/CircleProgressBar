@@ -3,7 +3,8 @@ package com.loonggg.godcoder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.loonggg.godcoder.view.CircleProgressBar;
+import com.loonggg.circleprogressbarlibrary.view.CircleProgressBar;
+
 
 public class MainActivity extends AppCompatActivity {
     private CircleProgressBar progressBar;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         progressBar = (CircleProgressBar) findViewById(R.id.pb);
-        progressBar.setProgress(1f,5000);
+        progressBar.setProgress(1f, 5000);
 
     }
 }
